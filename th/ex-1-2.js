@@ -17,7 +17,7 @@ let findIfItemExist = function(products, productName) {
     if (products.includes(productName) === true) {
         return "พบ cheese ในรายการสินค้า";
     }
-    else {
+    else if (products.includes(productName) === false) {
         return "ไม่พบ cereal box ในรายการสินค้า";
     }
 };
