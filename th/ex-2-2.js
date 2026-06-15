@@ -7,7 +7,13 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
+// ใช้ .slice() และ .sort()
+
 // Start coding here
+
+let findNLowestNumber = function(numbers, n) {
+    return numbers.sort((a, b) => a -b).slice(0, n);
+}
 
 const arrOfNumbers1 = [10, 3, 55, 0, 18];
 let result1 = findNLowestNumber(arrOfNumbers1, 3);

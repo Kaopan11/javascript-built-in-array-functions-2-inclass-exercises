@@ -7,9 +7,20 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
+// ใช้ .includes()
+
 // Start coding here
 
 const products = ["milk", "bread", "eggs", "butter", "cheese", "orange juice"];
+
+let findIfItemExist = function(products, productName) {
+    if (products.includes(productName) === true) {
+        return "พบ cheese ในรายการสินค้า";
+    }
+    else {
+        return "ไม่พบ cereal box ในรายการสินค้า";
+    }
+};
 
 console.log(findIfItemExist(products, "cereal box")); // ไม่พบ cereal box ในรายการสินค้า
 console.log(findIfItemExist(products, "cheese")); // พบ cheese ในรายการสินค้า

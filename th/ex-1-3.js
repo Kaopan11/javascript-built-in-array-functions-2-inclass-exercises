@@ -7,6 +7,8 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
+// ใช้ .slice()
+
 // Start coding here
 
 const guestList = [
@@ -18,6 +20,10 @@ const guestList = [
   "Sophia",
   "Daniel",
 ];
+
+let availableSeat = function(guestList, number) {
+  return guestList.slice(0, number);
+};
 
 console.log(availableSeat(guestList, 2)); // [ 'John', 'Sarah' ]
 console.log(availableSeat(guestList, 4)); // [ 'John', 'Sarah', 'Michael', 'Emma' ]

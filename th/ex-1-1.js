@@ -9,9 +9,14 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
-// Start coding here
+// ใช้ .indexof()
 
+// Start coding here
 const products = ["milk", "bread", "eggs", "butter", "cheese", "orange juice"];
+
+let findItemLocation = function(products, productName) {
+    return products.indexOf(productName);
+};
 
 console.log(findItemLocation(products, "cereal box")); // -1
 console.log(findItemLocation(products, "eggs")); // 2
